@@ -11,14 +11,15 @@ body {
 
 /* CABECERA - position fixed para que siempre se vea */
 header {
-    background-color: #333366;
+    background-color: #14285f;
     color: white;
     padding: 20px;
     text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1; /* para que la cabecera quede por encima */
+    z-index: 1;
+    /* para que la cabecera quede por encima */
 }
 
 /* PIE - igual que la cabecera pero abajo */
@@ -44,8 +45,10 @@ footer {
     width: 180px;
     background-color: #e6e6fa;
     padding: 15px;
-    height: 500px; /* altura fija como en los apuntes */
-    overflow-y: scroll; /* si hay muchos anuncios, que tenga scroll */
+    height: 500px;
+    /* altura fija como en los apuntes */
+    overflow-y: scroll;
+    /* si hay muchos anuncios, que tenga scroll */
     float: left;
 }
 
@@ -60,8 +63,9 @@ footer {
 
 /* estilo de cada anuncio */
 .anuncio {
-    border: 2px solid #663399;
-    border-radius: 10px; /* esquinas redondeadas */
+    border: 2px solid #14285f;
+    border-radius: 10px;
+    /* esquinas redondeadas */
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
@@ -69,7 +73,7 @@ footer {
 }
 
 .anuncio h3 {
-    color: #663399;
+    color: #14285f;
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -101,39 +105,43 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* quitar viñetas */
+    list-style-type: none;
+    /* quitar viñetas */
     text-align: center;
 }
 
 nav ul li {
-    display: inline; /* para que el menú sea horizontal */
+    display: inline;
+    /* para que el menú sea horizontal */
     margin: 0 15px;
 }
 
 /* efecto hover en enlaces del menú */
 nav ul li a:hover {
-    background-color: #663399;
+    background-color: #14285f;
     color: white;
     padding: 5px 10px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none; /* quitar subrayado */
+    text-decoration: none;
+    /* quitar subrayado */
     font-weight: bold;
 }
 
 /* tabla de horarios */
 .tabla-horarios {
     width: 100%;
-    border-collapse: collapse; /* juntar bordes de tabla */
+    border-collapse: collapse;
+    /* juntar bordes de tabla */
     margin: 20px 0;
 }
 
 .tabla-horarios th {
-    background-color: #333366;
+    background-color: #14285f;
     color: white;
-    border: 1px solid #333366;
+    border: 1px solid #14285f;
     padding: 10px;
 }
 
@@ -151,7 +159,8 @@ nav ul li a {
 /* formulario */
 form {
     width: 600px;
-    margin: 0 auto; /* centrar el formulario */
+    margin: 0 auto;
+    /* centrar el formulario */
     background-color: #f9f9f9;
     border: 1px solid #cccccc;
     border-radius: 10px;
@@ -163,7 +172,8 @@ form {
 }
 
 .campo-formulario label {
-    display: block; /* que la label ocupe toda su línea */
+    display: block;
+    /* que la label ocupe toda su línea */
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -181,7 +191,7 @@ form {
 /* cuando el campo tiene el foco cambia de color */
 .campo-formulario input:focus {
     background-color: #ffffcc;
-    border-color: #663399;
+    border-color: #14285f;
 }
 
 /* grupo de botones del formulario */
@@ -195,7 +205,8 @@ form {
     margin: 0 5px;
     border: 2px solid transparent;
     border-radius: 5px;
-    cursor: pointer; /* la manita al pasar por encima */
+    cursor: pointer;
+    /* la manita al pasar por encima */
     font-weight: bold;
 }
 
@@ -215,7 +226,8 @@ form {
 }
 
 .boton:hover {
-    border-color: #333333; /* efecto hover en botones */
+    border-color: #333333;
+    /* efecto hover en botones */
 }
 
 /* página de noticias - usando float para las columnas */
@@ -240,14 +252,15 @@ form {
 /* cada artículo de noticias */
 .articulo {
     background-color: #f9f9f9;
-    border-left: 5px solid #663399; /* barra lateral de color */
+    border-left: 5px solid #14285f;
+    /* barra lateral de color */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 0 10px 10px 0;
 }
 
 .articulo h3 {
-    color: #663399;
+    color: #14285f;
     margin-bottom: 5px;
 }
 
@@ -259,7 +272,8 @@ form {
 
 .anuncio-noticia {
     background-color: white;
-    border: 2px dashed #663399; /* borde discontinuo */
+    border: 2px dashed #14285f;
+    /* borde discontinuo */
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
@@ -267,12 +281,13 @@ form {
 
 /* botón para volver a la página principal */
 .boton-volver {
-    clear: both; /* importante para que no se solape con floats */
+    clear: both;
+    /* importante para que no se solape con floats */
     display: block;
     width: 150px;
     margin: 20px auto;
     padding: 10px;
-    background-color: #663399;
+    background-color: #14285f;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -281,7 +296,7 @@ form {
 }
 
 .boton-volver:hover {
-    background-color: #442266;
+    background-color: #14285f;
 }
 
 /* títulos de sección con efecto de texto */
@@ -289,9 +304,11 @@ form {
     color: #333366;
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase; /* todo en mayúsculas */
-    letter-spacing: 2px; /* separación entre letras */
-    border-bottom: 3px solid #663399;
+    text-transform: uppercase;
+    /* todo en mayúsculas */
+    letter-spacing: 2px;
+    /* separación entre letras */
+    border-bottom: 3px solid #14285f;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
@@ -313,7 +330,8 @@ form {
 }
 
 .transicion:hover {
-    transform: scale(1.1); /* aumenta un poco el tamaño */
+    transform: scale(1.1);
+    /* aumenta un poco el tamaño */
 }
 
 /* para la página de alta - centrar el contenido */
@@ -327,4 +345,11 @@ form {
 img {
     max-width: 100%;
     height: auto;
+}
+.contenido-central img {
+    width: 300px;     /* mismo ancho para las dos */
+    height: 200px;    /* mismo alto para las dos */
+    object-fit: cover; /* esto hace que la imagen se recorte para llenar el espacio sin deformarse */
+    border: 2px solid #663399;
+    margin: 10px;
 }
