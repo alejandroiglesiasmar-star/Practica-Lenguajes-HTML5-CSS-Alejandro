@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYM FIT - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>GYM FIT CENTER</h1>
+        <p>Tu lugar para ponerte en forma</p>
+    </header>
+
+    <div class="contenedor-principal">
+        <!-- lado izquierdo -->
+        <aside class="lateral">
+            <div class="anuncio">
+                <h3>Suplementos Pro</h3>
+                <p class="texto-destacado">20% OFF</p>
+                <img src="recursos/proteina.jpg" alt="Proteína" />
+                <p class="texto-italic">Oferta limitada</p>
+            </div>
+            <div class="anuncio">
+                <h3>🥤 Bebidas Energéticas</h3>
+                <p>2x1 en todas</p>
+                <p class="texto-destacado">¡NUEVO!</p>
+            </div>
+        </aside>
+
+        <!-- lado derecho) -->
+        <aside class="lateral lateral-derecho">
+            <div class="anuncio">
+                <h3>Ropa Deportiva</h3>
+                <p>30% descuento</p>
+                <img src="recursos/ropa.jpg" alt="Ropa gym" />
+            </div>
+            <div class="anuncio">
+                <h3>Asesoría Nutricional</h3>
+                <p>Primera consulta gratis</p>
+            </div>
+        </aside>
+
+        <!-- contenido central -->
+        <main class="contenido-central">
+            <!-- menu DE NAVEGACIÓN -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="alta.html">Alta (Registro)</a></li>
+                    <li>
+                        <a href="https://www.fitness.com/" target="_blank">Revista Fitness</a>
+                    </li>
+                    <li>
+                        <a href="https://www.menshealth.com/es/" target="_blank">Men's Health</a>
+                    </li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+            </nav>
+
+            <h2 class="titulo-seccion">Bienvenido a GYM FIT</h2>
+
+            <!-- SECCIÓN CENTRAL CON INFO -->
+            <section>
+                <p>
+                    En GYM FIT ofrecemos las mejores instalaciones para que alcances tus
+                    metas. Contamos con máquinas de última generación y entrenadores
+                    certificados.
+                </p>
+
+                <h3>Nuestras Instalaciones</h3>
+                <img src="recursos/pesas.jpg" alt="Zona de pesas" width="300"
+                    style="margin: 10px; border: 2px solid #663399" />
+                <img src="recursos/cardio.jpg" alt="Zona de cardio" width="300"
+                    style="margin: 10px; border: 2px solid #663399" />
+
+                <h3>Rutina de ejemplo</h3>
+                <!-- video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=h_boJqs72mg"
+                    title="Rutina de gym"></iframe>
+
+                <!-- TABLA DE HORARIOS -->
+                <h3>Horarios de Clases</h3>
+                <table class="tabla-horarios">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Lunes</th>
+                            <th>Miércoles</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spinning</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Yoga</td>
+                            <td>19:30</td>
+                            <td>-</td>
+                            <td>19:30</td>
+                        </tr>
+                        <tr>
+                            <td>Boxeo</td>
+                            <td>20:00</td>
+                            <td>20:00</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Elemento con transición básica -->
+                <div class="anuncio transicion" style="width: 200px; margin: 20px auto">
+                    <p class="texto-destacado">¡OFERTA ESPECIAL!</p>
+                    <p>3 meses por el precio de 2</p>
+                </div>
+            </section>
+
+            <!-- Limpiar floats -->
+            <div class="clearfix"></div>
+        </main>
+
+        <!-- Limpiar floats -->
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- PIE DE PÁGINA FIJO (position: fixed) -->
+    <footer>
+        <p>
+            © 2026 GYM FIT CENTER - Contacto: info@gymcalasanz.com | C/ Canalejas,
+            Calasanz, Salamanca
+        </p>
+    </footer>
+</body>
+
+</html>

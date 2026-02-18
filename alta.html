@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM FIT - Registro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        /* CSS interno para esta página específica - visto página 3 */
+        .pagina-alta .contenido-central {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body class="pagina-alta">
+
+    <header>
+        <h1>🏋️ GYM FIT CENTER</h1>
+        <p>Tu lugar para ponerte en forma</p>
+    </header>
+
+    <div class="contenedor-principal">
+        <!-- SIN SECCIONES LATERALES -->
+        <main class="contenido-central" style="margin-left: auto; margin-right: auto;">
+
+            <h2 class="titulo-seccion">Alta de Socio</h2>
+
+            <!-- FORMULARIO -->
+            <form action="index.html" method="get">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="dni">DNI (8 dígitos + letra mayúscula):</label>
+                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" placeholder="12345678A" required>
+                    <small>Formato: 12345678A</small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="direccion">Dirección (C/ "Nombre" Nº "num" P"letra"):</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="C/ Gran Vía Nº 15 P2" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="cp">Código Postal (5 dígitos):</label>
+                    <input type="text" id="cp" name="cp" list="cpsugeridos" pattern="[0-9]{5}" required>
+                    <datalist id="cpsugeridos">
+                        <option value="28001">Madrid</option>
+                        <option value="08001">Barcelona</option>
+                        <option value="41001">Sevilla</option>
+                        <option value="46001">Valencia</option>
+                        <option value="50001">Zaragoza</option>
+                    </datalist>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona...</option>
+                        <option value="España">España</option>
+                        <option value="Mexico">México</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha">Fecha de Nacimiento (opcional):</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email (correo@correo.es):</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@correo.es">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="pass">Contraseña (_Max7Letras _5letrasONumeros&2num):</label>
+                    <input type="password" id="pass" name="pass" pattern="_[A-Za-z]{1,7} _[A-Za-z0-9]{5}&[0-9]{2}"
+                        placeholder="_Juan _abc12&99" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="sexo" value="Hombre" required> Hombre
+                    <input type="radio" name="sexo" value="Mujer" required> Mujer
+                </div>
+
+                <div class="campo-formulario">
+                    <label>Aficiones:</label><br>
+                    <input type="checkbox" name="aficiones" value="Running"> Running<br>
+                    <input type="checkbox" name="aficiones" value="Natacion"> Natación<br>
+                    <input type="checkbox" name="aficiones" value="Ciclismo"> Ciclismo<br>
+                    <input type="checkbox" name="aficiones" value="Boxeo"> Boxeo<br>
+                    <label for="otraAficion">Otra:</label>
+                    <input type="text" id="otraAficion" name="otraAficion">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="foto">Subir foto de perfil (opcional):</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </div>
+
+                <div class="grupo-botones">
+                    <button type="submit" class="boton boton-enviar">Enviar</button>
+                    <button type="reset" class="boton boton-borrar">Borrar</button>
+                    <button type="button" class="boton boton-cancelar"
+                        onclick="window.location.href='index.html';">Cancelar</button>
+                </div>
+            </form>
+
+            <div class="clearfix"></div>
+        </main>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <footer>
+        <p> © 2026 GYM FIT CENTER - Contacto: info@gymcalasanz.com | C/ Canalejas,
+            Calasanz, Salamanca</p>
+    </footer>
+
+</body>
+
+</html>
