@@ -19,7 +19,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    /* para que la cabecera quede por encima */
 }
 
 /* PIE - igual que la cabecera pero abajo */
@@ -46,9 +45,7 @@ footer {
     background-color: #e6e6fa;
     padding: 15px;
     height: 500px;
-    /* altura fija como en los apuntes */
     overflow-y: scroll;
-    /* si hay muchos anuncios, que tenga scroll */
     float: left;
 }
 
@@ -65,7 +62,6 @@ footer {
 .anuncio {
     border: 2px solid #14285f;
     border-radius: 10px;
-    /* esquinas redondeadas */
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
@@ -106,35 +102,30 @@ nav {
 
 nav ul {
     list-style-type: none;
-    /* quitar viñetas */
     text-align: center;
 }
 
 nav ul li {
     display: inline;
-    /* para que el menú sea horizontal */
     margin: 0 15px;
 }
 
-/* efecto hover en enlaces del menú */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav ul li a:hover {
     background-color: #14285f;
     color: white;
     padding: 5px 10px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    /* quitar subrayado */
-    font-weight: bold;
-}
-
 /* tabla de horarios */
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
-    /* juntar bordes de tabla */
     margin: 20px 0;
 }
 
@@ -151,7 +142,6 @@ nav ul li a {
     text-align: center;
 }
 
-/* filas pares de la tabla con otro color */
 .tabla-horarios tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -160,7 +150,6 @@ nav ul li a {
 form {
     width: 600px;
     margin: 0 auto;
-    /* centrar el formulario */
     background-color: #f9f9f9;
     border: 1px solid #cccccc;
     border-radius: 10px;
@@ -173,7 +162,6 @@ form {
 
 .campo-formulario label {
     display: block;
-    /* que la label ocupe toda su línea */
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -188,7 +176,6 @@ form {
     border-radius: 5px;
 }
 
-/* cuando el campo tiene el foco cambia de color */
 .campo-formulario input:focus {
     background-color: #ffffcc;
     border-color: #14285f;
@@ -206,7 +193,6 @@ form {
     border: 2px solid transparent;
     border-radius: 5px;
     cursor: pointer;
-    /* la manita al pasar por encima */
     font-weight: bold;
 }
 
@@ -227,7 +213,6 @@ form {
 
 .boton:hover {
     border-color: #333333;
-    /* efecto hover en botones */
 }
 
 /* página de noticias - usando float para las columnas */
@@ -253,7 +238,6 @@ form {
 .articulo {
     background-color: #f9f9f9;
     border-left: 5px solid #14285f;
-    /* barra lateral de color */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 0 10px 10px 0;
@@ -273,7 +257,6 @@ form {
 .anuncio-noticia {
     background-color: white;
     border: 2px dashed #14285f;
-    /* borde discontinuo */
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
@@ -282,7 +265,6 @@ form {
 /* botón para volver a la página principal */
 .boton-volver {
     clear: both;
-    /* importante para que no se solape con floats */
     display: block;
     width: 150px;
     margin: 20px auto;
@@ -296,42 +278,31 @@ form {
 }
 
 .boton-volver:hover {
-    background-color: #14285f;
+    background-color: #0e1f45;
 }
 
-/* títulos de sección con efecto de texto */
+/* títulos de sección */
 .titulo-seccion {
     color: #333366;
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
-    /* todo en mayúsculas */
-    letter-spacing: 2px;
-    /* separación entre letras */
     border-bottom: 3px solid #14285f;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #999999;
 }
 
-/* texto con sombra (efecto visto en apuntes) */
+/* texto destacado */
 .texto-destacado {
-    text-shadow: 2px 2px 2px #999999;
     font-size: 18px;
+    font-weight: bold;
 }
 
 /* texto en cursiva */
 .texto-italic {
     font-style: italic;
-}
-
-/* transición básica - para efectos suaves */
-.transicion {
-    transition: all 0.5s ease;
-}
-
-.transicion:hover {
-    transform: scale(1.1);
-    /* aumenta un poco el tamaño */
 }
 
 /* para la página de alta - centrar el contenido */
@@ -346,10 +317,57 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* igualar tamaño de las imágenes */
 .contenido-central img {
-    width: 300px;     /* mismo ancho para las dos */
-    height: 200px;    /* mismo alto para las dos */
-    object-fit: cover; /* esto hace que la imagen se recorte para llenar el espacio sin deformarse */
-    border: 2px solid #663399;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #14285f;
     margin: 10px;
+}
+
+/* EFECTOS DE TEXTO */
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* TRANSICIONES */
+nav ul li a {
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.boton {
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMACIONES */
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header h1 {
+    animation: aparecer 2s ease;
+}
+
+@keyframes parpadeo {
+    0% { background-color: yellow; }
+    50% { background-color: orange; }
+    100% { background-color: yellow; }
+}
+
+.oferta {
+    animation: parpadeo 1.5s infinite;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
