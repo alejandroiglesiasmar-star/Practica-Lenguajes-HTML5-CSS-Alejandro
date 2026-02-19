@@ -1,0 +1,115 @@
+/* laterales de publicidad */
+.lateral {
+    width: 180px;
+    background-color: #e6e6fa;
+    padding: 15px;
+    height: 500px;
+    overflow-y: scroll;
+    float: left;
+}
+
+.lateral-derecho {
+    float: right;
+}
+
+/* anuncios */
+.anuncio {
+    border: 2px solid #14285f;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.anuncio h3 {
+    color: #14285f;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.anuncio p {
+    font-weight: bold;
+    color: #cc6600;
+}
+
+.anuncio img {
+    width: 150px;
+    border: 1px solid #999999;
+    margin-top: 10px;
+}
+
+/* contenido central */
+.contenido-central {
+    background-color: white;
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+/* menú de navegación */
+nav {
+    background-color: #444444;
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #14285f;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* tabla de horarios */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-horarios th {
+    background-color: #14285f;
+    color: white;
+    border: 1px solid #14285f;
+    padding: 10px;
+}
+
+.tabla-horarios td {
+    border: 1px solid #999999;
+    padding: 8px;
+    text-align: center;
+}
+
+/* imágenes de instalaciones */
+.contenido-central img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #14285f;
+    margin: 10px;
+}
+
+/* EFECTOS DE TEXTO en menú */
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* TRANSICIÓN 1: enlaces menú cambian color */
+nav ul li a {
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}

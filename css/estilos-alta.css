@@ -1,0 +1,84 @@
+/* centrar contenido en página de alta */
+.pagina-alta .contenido-central {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+/* formulario */
+form {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.campo-formulario {
+    margin-bottom: 15px;
+}
+
+.campo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo-formulario input[type="text"],
+.campo-formulario input[type="email"],
+.campo-formulario input[type="password"],
+.campo-formulario select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.campo-formulario input:focus {
+    background-color: #ffffcc;
+    border-color: #14285f;
+}
+
+/* botones */
+.grupo-botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-enviar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.boton-borrar {
+    background-color: #f44336;
+    color: white;
+}
+
+.boton-cancelar {
+    background-color: #ff9800;
+    color: white;
+}
+
+.boton:hover {
+    border-color: #333333;
+}
+
+/* TRANSICIÓN 2: botones aumentan tamaño */
+.boton {
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
