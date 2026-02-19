@@ -16,9 +16,8 @@
     background-color: #f0f0f0;
     padding: 15px;
     border: 1px solid #cccccc;
-    border-radius: 10px;
-}
 
+}
 /* cada artículo */
 .articulo {
     background-color: #f9f9f9;
@@ -32,13 +31,6 @@
     color: #14285f;
     margin-bottom: 5px;
 }
-
-.articulo .fecha {
-    color: #999999;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
 /* anuncios dentro de la sección de noticias */
 .anuncio-noticia {
     background-color: white;
@@ -49,20 +41,8 @@
 }
 
 /* botón volver */
-.boton-volver {
-    clear: both;
-    display: block;
-    width: 150px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #14285f;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
+
 
 .boton-volver:hover {
-    background-color: #0e1f45;
+    background-color: #a6b6da;
 }

@@ -40,11 +40,9 @@ footer {
 }
 
 /* limpiar floats */
-.clearfix {
-    clear: both;
-}
 
-/* imágenes responsive */
+
+/* img*/
 img {
     max-width: 100%;
     height: auto;
