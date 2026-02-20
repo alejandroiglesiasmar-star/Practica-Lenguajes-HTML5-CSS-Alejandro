@@ -41,8 +41,11 @@
 }
 
 /* botón volver */
-
-
 .boton-volver:hover {
     background-color: #a6b6da;
+}
+.boton{
+   padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;            
 }
