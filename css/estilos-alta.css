@@ -48,11 +48,8 @@ form {
 
 .boton {
     padding: 10px 20px;
-    margin: 0 5px;
-    border: 2px solid transparent;
+    border: 2px solid black;
     border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 .boton-enviar {

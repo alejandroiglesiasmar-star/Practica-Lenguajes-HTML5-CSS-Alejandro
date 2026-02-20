@@ -93,7 +93,8 @@ nav ul li a:hover {
 
 /* imágenes de instalaciones */
 .contenido-central img {
-    width: 300px;
+    text-align: center;
+      width: 300px;
     height: 200px;
     border: 2px solid #14285f;
     margin: 10px;
@@ -112,4 +113,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffcc00;
+}
+iframe{
+    display: block;
+    margin: 20px auto;
 }
